@@ -1,0 +1,158 @@
+ 
+ .carousel-container {
+    display: flex;
+    justify-content: center;
+     align-items: center; 
+    flex-direction: row;
+    margin-top: 30px;
+    color: black;
+  } 
+
+  .carousel-button1 {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 47%;
+    left: 30%;
+  }
+  .carousel-button2 {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    top: 47%;
+    right: 30%;
+    position: absolute;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+ 
+  }
+  
+  .carousel-button:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .carousel-image {
+    width: 80%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .carousel-icon1{
+  
+margin-right: 70px;
+margin-top: -300px;
+cursor: pointer;
+
+  }
+  .carousel-icon2{
+  
+    margin-left: 70px;
+    margin-top: -300px;
+    cursor: pointer;
+    
+      }
+      .mystyle {
+        height: 300px;
+        width: 30%;
+        position: fixed;
+        top: -100%;
+        left: 7%;
+        background-color: black;
+        transition: 0.5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        cursor: pointer;
+        text-align: center;
+        color: white;
+      }
+      .map-style{
+        height: 300px;
+        width: 30%;
+        position: fixed;
+        top: -100%;
+        right: 7%;
+        background-color: black;
+        transition: 0.5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        cursor: pointer;
+        text-align: center;
+        color: white;
+
+      }
+      .show-active-form  {
+        top: 0%;
+
+      }
+      .show-active-map{
+        top: 0%;
+      }
+      .input-field{
+        width: 50%;
+        padding: 10px;
+        margin: 5px  25%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      
+      } 
+      .map-style iframe {
+        width: 100%;
+        height: 100%;
+      }
+      @media (max-width: 768px) {
+        .input-field {
+          width: 90%;
+        }
+      
+        .social-icons {
+          flex-direction: column;
+          font-size: 20px;
+        }
+      
+        .carousel-image {
+          max-width: 100%;
+        }
+      
+        .carousel-button1,
+        .carousel-button2 {
+          width: 100px;
+          margin: 5px;
+        }
+      
+        iframe {
+          height: 300px;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .carousel-icon1,
+        .carousel-icon2 {
+          font-size: 20px;
+          margin: 10px;
+        }
+      
+        .input-field {
+          padding: 8px;
+        }
+      
+        .carousel-image {
+          max-width: 100%;
+        }
+      
+        iframe {
+          height: 250px;
+        }
+      }
+      

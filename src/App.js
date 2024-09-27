@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import Header from './components/Header'
+import Tabs from './components/Tabs'
+import YouTubeVideo from './components/YotubeVideo'
+import Tabs2 from './components/Tabs2'
+import Wizard from './components/Wizard'
+import Footer from './components/Footer'
+function app(){
+  return(
+   <>
+  <Header/>
+  <YouTubeVideo/>
+  <div style={{display:'flex', flexDirection:'row', justifyContent:'space-around' , marginBottom:'200px', marginTop:'-7rem' }}>
+  <Tabs/>
+  <Tabs2/>
+  </div>
+   <Wizard/>
+   <Footer/>
+  
+ 
+    
+   
+    </>
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  )
 }
-
-export default App;
+export default app
